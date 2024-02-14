@@ -39,7 +39,7 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
 
 //docs: https://262.ecma-international.org/5.1/#sec-11.4.3
 
@@ -55,3 +55,27 @@ Object
 (native and does not implement [[Call]]):  |"object"
 Object (native or host and does implement [[Call]]):"function"
 Object (host and does not implement [[Call]]):Implementation-defined except may not be "undefined", "boolean", "number", or "string". */
+
+
+
+//stack (occuers in Primitive datatype )--> gives the copy of values ,  Heap (occurs in Non-Primitive Datatype)--> gives the reference of actual value
+
+let myTwitter = "@kunaltwts"
+let anotherTwitterId = myTwitter
+anotherTwitterId = "kunal-kumar"
+
+ console.log(myTwitter);
+ console.log(anotherTwitterId);
+
+
+ let userOne = {
+    email: "userEmailId@gmail.com",
+    upiId: "username@yonosbi"
+ }
+
+ let userTwo = userOne
+
+ userTwo.email = "kunaldevspro@gmail.com"
+// due to "heap" the changes made in userTwo.email will also change the changes in userOne.email
+ console.log(userOne.email);
+ console.log(userTwo.email);
