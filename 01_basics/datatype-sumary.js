@@ -56,8 +56,6 @@ Object
 Object (native or host and does implement [[Call]]):"function"
 Object (host and does not implement [[Call]]):Implementation-defined except may not be "undefined", "boolean", "number", or "string". */
 
-
-
 //stack (occuers in Primitive datatype )--> gives the copy of values ,  Heap (occurs in Non-Primitive Datatype)--> gives the reference of actual value
 
 let myTwitter = "@kunaltwts"
